@@ -1,10 +1,11 @@
 <?php
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, OPTIONS, POST, GET, PUT");
+header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
+
 class Plans extends CI_Controller{
     function __construct(){
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: GET, OPTIONS, POST, GET, PUT");
-        header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
-        
         parent::__construct();
         $this->username = 'foxusapi';
         $this->password = '3nJJdo!ryQcs';
