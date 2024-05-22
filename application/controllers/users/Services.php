@@ -1,18 +1,8 @@
 <?php
 
-/* 
-    Log In
-    Get WME Balance
-    Service Detail (End User)
-    Get Current Usage Period Summary
-    Get Package Subscriptions (End User)
-    Add Bolt-on Add-on Subscription
-    Add Bolt-on Subscription
-    Get Package Plan Details (End User)
-    Get Package Plans (End User)
-    Get Terms And Conditions (End User)
-    Activate Service 
-*/
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, OPTIONS, POST, GET, PUT");
+header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
 
 class Services extends CI_Controller{
     function __construct(){

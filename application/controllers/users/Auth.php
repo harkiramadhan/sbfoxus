@@ -1,4 +1,9 @@
 <?php
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, OPTIONS, POST, GET, PUT");
+header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
+
 class Auth extends CI_Controller{
     function __construct(){
         parent::__construct();
